@@ -1,0 +1,27 @@
+
+html {
+	background-image: url("mainback.jpg");
+}
+h1 {
+	font-family: 'Rock Salt', cursive;
+}
+
+h2 {
+	font-family: 'Poiret One', cursive;
+	line-height: 1px;
+
+}
+
+h4{
+	font-family: 'Poiret One', cursive;
+	line-height: 1px;
+}
+
+.maincontent {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: 2px;
+	width: 650px;
+	text-align: justify;
+
+}
