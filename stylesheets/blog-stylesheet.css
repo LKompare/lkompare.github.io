@@ -1,6 +1,7 @@
 
 body {
 	background-image: url("mainback.jpg");
+	padding: 0;
 }
 h1 {
 	font-family: 'Rock Salt', cursive;
