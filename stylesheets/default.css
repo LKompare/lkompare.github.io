@@ -12,11 +12,11 @@ html, body {
   left:0; 
   position: fixed; 
   width:100%; 
-  top:0; 
+  top:3; 
 }
 
 #header{ 
-  line-height: 60px; 
+  line-height: 4px; 
   background: #fafafa url(mainback.jpg) repeat; 
   height:140px;
   width: 75%; 
