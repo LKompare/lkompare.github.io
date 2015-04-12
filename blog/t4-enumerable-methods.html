@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Pacifico|Rock+Salt' rel='stylesheet' type='text/css'>
+  <title>BANG BANG, I am a tech warrior.</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+<body>
+<main>
+  <h1>Darling, You're Enumerable</h1>
+  <h2>#MAPS!</h2>
+  <h4>April 12, 2015</h4>
+
+  <div class="maincontent">
+  <section>
+    <p>
+      So for this week's tech blog, I chose the enumerable method #map. I chose it because I see it coming up often, it seems to be used frequently, and can be very versatile. So in order to increase my understanding of it, I have decided to write to help others with it as well. Two birds, one stone. David A. Black in <i>The Well Grounded Rubyist</i> says:
+      <blockquote>"The #map method (also callable as collect) is one of the most powerful and important enumberable or collection operations in Ruby. </blockquote>
+    </p>
+    <p>
+      Well, that seems like a good enough reason for me. MAP seems to be a great method when you want to look at or change each thing in an array.
+      It will return an array the same size as the original array used, then can change it depending on how you tweak it with something like a block. It runs each element through the command in the block. See? Pretty powerful. Really - you can use it to upcase, downcase, math, sorting, and more. You may ask 'But isn't that what .each does?' David A. Black answers that by saying that map will instead return a NEW object while each returns its receiver. So so there? Why .each also now uses return? However, you can make map destructive with a bang(!).
+    </p>
+    <p><blockquote>Verbs = ['rules', 'rocks', 'slays']<BR>
+array_of_odoyles = verbs.map do |verb|<BR>
+  "O'Doyle #{verbs}"<BR>
+end<BR></blockquote>
+        This will return us something that looks like this: <BR>
+        <blockquote>[ 'O'Doyle rules', 'O'Doyle rocks', 'O'Doyle slays']</blockquote><BR>
+        So the map looked at each verb in that array, then looked at the block and saw that it wanted to add something across the array to each string, then created us a new array with the results. So it is a good method to have a good hold of in ruby since it is a powerful tool in looking over arrays and changing them around. It is good to keep an idea how .map and .each are different, and how all of these methods can help you achieve what kind of output you want. 
+        <P>
+        You can also add it with other methods like select. This will be handy if you want to only modify elements in an array that meet a certain condition. You can lay out the condition, then have map apply the changes. Example:
+        <blockquote>[1, 2, 3, 4, 5, 6].select { |elm| elm % 2 == 0 }.map { |elm| elm * 2 }<BR>
+# => [4, 8, 12]</blockquote>
+<BR>Here it is saying 'Select every element divisible by 2' - hence the == 0 - then take those elements and have each one multiplied by two. It then will return an array of only those numbers. 
+
+      <p><img src="trueliesig.png" align="right"></p>
+    </p>
+    </section></div>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+</body>
+</html>
