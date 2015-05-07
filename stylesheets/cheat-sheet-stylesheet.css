@@ -1,0 +1,45 @@
+.header {
+  text-align: center;
+  background-color: #A7FBA4;
+}
+
+.ForLoop, .WhileLoop, .row {
+  display: inline-block;
+  width: 100%;
+}
+
+/*.leftRubyFor, .rightJSFor {
+  width: 50%;
+  float: left;
+  margin: 10px;
+}*/
+
+.leftRubyFor, .leftwhileRuby, .leftUntilRuby {
+  display: inline-block;
+  width: 45%;
+  height: 20%;
+  float: left;
+  margin: 5px;
+}
+
+.rightJSFor, .rightJSwhile, .rightJSforin {
+  display: inline-block;
+  width: 50%;
+  height: 20%;
+  float: right;
+  margin: 5px;
+}
+
+h2 {
+  font-family: Rock Salt, Courier;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: Pacifico, Courier;
+  font-size: 4em;
+}
+
+h4 {
+  font-family: Poiret One, Courier;
+}
