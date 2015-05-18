@@ -57,7 +57,7 @@ body {
   width: 100%;
   position: center;
   height: auto;
-  margin-top: 100px;
+  margin-top: 0px;
   background: url(mainback.jpg) repeat;
   border: 10px solid transparent;
 
@@ -118,9 +118,10 @@ a:hover {
 
 iframe[seamless] { 
     display: inline-block;
-    psotion: fixed;
-    height: 700px;
-    width: 1300px;
+    postion: static;
+    height: 600px;
+    width: 900px;
+    margin-left: 10px;
     border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden;
@@ -128,6 +129,23 @@ iframe[seamless] {
     border-bottom-width: 0;
     border-left-width: 0;
     z-index: -1;
+  
+
+
+}
+.iframe2[seamless] { 
+    display: inline-block;
+    position: static;
+    height: 600px;
+    width: 300px;
+    margin-left: 800px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    z-index: 1;
   
 
 
@@ -155,13 +173,26 @@ iframe[seamless] {
 
 .header {
   width: 100%;
-  position: static;
+  height: 10%;
+  background: #fafafa url(mainback.jpg) repeat;
+
 }
 
 #headerlogo {
   position: absolute;
   left: 50px;
   top: 4px;
+}
+
+#navigation {
+  position: absolute;
+  visibility: visible;
+  margin-left: 1000px;
+  margin-top: -100px;
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  z-index: 30;
 }
 
 #headername span {
@@ -182,21 +213,9 @@ iframe[seamless] {
   text-align: right;
   font-family: fancy, helvetica, sans-serif;
   text-shadow: 0 2px 4px rgba(250,250,250,.3);
-  display:block;
+  display: inline-block;
   z-index: 888;
   background: #fafafa url(mainback.jpg) repeat;
-}
-
-#navigation {
-  position: inherit;
-  visibility: visible;
-  float: right;
-  margin-right: 300;
-  margin-top: -80;
-  transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
-  -webkit-transform: rotate(-5deg);
-  z-index: 999;
 }
 
 .navimage {
@@ -204,8 +223,8 @@ iframe[seamless] {
 }
 
 .navimg {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 170px;
   box-shadow: 1px 1px 1px #c0c0c0;
   background: url('http://i.imgur.com/0Z7WuNk.png') repeat;
   padding: 7;
@@ -249,12 +268,12 @@ iframe[seamless] {
 
 .gradient {
   position: static;
-  top: 200px;
+  margin-top: 100px;
   width: 1400px;
   height: 7px;
   background: url('http://i.imgur.com/0Z7WuNk.png') repeat;
   border-radius: 3px;
-  z-index: -99;
+  z-index: 10;
 }
 
 /* ---- LANDING ---- */
@@ -348,78 +367,5 @@ dateline {
 }
 
 
-/* ---- FACTS ---- */
 
-#factcontent {
-  margin-left: 100;
-  margin-right: 100;
-}
-
-#fact {
-  float:left;
-  width:48%;
-}
-
-#fact2 {
-  padding-top: 10px;
-}
-
-#lines {
-  padding-top: 10px;
-}
-
-.fam { 
-  display:inline-block;
-  margin:-1px;
-}
-
-.relation {
-  font-family: montserrat, arial;
-  font-size:9px;
-  letter-spacing:0px;
-  text-transform: uppercase;
-  color:black;
-  display: block;
-  text-align: right;
-  padding:5px 10px;
-  width:90px;
-  margin:1px 0px;
-  vertical-align: middle;
-}
-
-.relative {
-  font-family: montserrat, arial;
-  text-transform:uppercase;
-  font-size:9px;
-  display: block;
-  text-align: left;
-  padding:4px 10px;
-  width:160px;
-  background-color:rgba(0,0,0,0.03);
-  margin:3px 0px;
-}
-
-#lines img {
-    width:40;
-    opacity:0.5;
-    filter:alpha(opacity=50);
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px #666;
-    margin-right:3px;
-    margin-top:10px;
-    margin-left:3px;
-    background-color: rgba(250, 250, 250, 0.8);
-    padding:2px;
-    transition:1.5s;
-}
-
-#lines img:hover {
-    opacity:0.8;
-    filter:alpha(opacity=80);
-    background-color: #f0b630;
-    padding:2px;
-    transition:1.5s; 
-}
-
->
 </head>
